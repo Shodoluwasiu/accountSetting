@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    FYI:
+    Textarea resize in the design is a native feature of browsers.
+    Also there is no close icon in the assets, so you should try to find another way of implementing it.
+  -->
+
+
+  <div class="overlay">
+    <div class="settings-container">
+      <h4>Account settings</h4>
+            <span class="close-btn">&times;</span>
+        <div class="settings-card">
+            <img src="img/avatar.jpg" alt="Profile" class="profile-pic">
+            <!-- <h2>Account settings</h2>
+            <span class="close-btn">&times;</span> -->
+
+            <form>
+                <label>USERNAME</label>
+                <input type="text" placeholder="Enter your username">
+
+                <div class="name-fields">
+                    <div>
+                        <label>FIRST NAME</label>
+                        <input type="text" placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <label>LAST NAME</label>
+                        <input type="text" placeholder="Enter your last name">
+                    </div>
+                </div>
+
+                <label>EMAIL</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>BIO</label>
+                <textarea placeholder="Tell us about yourself"></textarea>
+
+                <!-- <div class="action-buttons">
+                    <button type="button" class="cancel">Cancel</button>
+                    <button type="submit" class="save">Save</button>
+                </div> -->
+            </form>
+        </div>
+        <div class="action-buttons">
+          <button type="button" class="cancel">Cancel</button>
+          <button type="submit" class="save">Save</button>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>
