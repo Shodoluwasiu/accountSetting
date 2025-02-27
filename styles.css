@@ -114,7 +114,9 @@ input, textarea {
     bottom: 20px;
     right: 20px;
 }
-
+.btnw{
+    display: none;
+}
 button {
     border: none;
     background: transparent;
@@ -134,6 +136,7 @@ button {
 .action-buttons button:hover{
     color: black;
 }
+
 
 /* 📌 Tablets (Max-width: 1024px) */
 @media screen and (max-width: 1024px) {
@@ -161,15 +164,26 @@ button {
         font-size: 12px;
     }
 
-    .action-buttons {
+    /* .action-buttons {
         flex-direction: column;
         align-items: flex-start;
         bottom: 15px;
         right: auto;
-    }
+    } */
 
-    .action-buttons button {
-        margin-bottom: 10px;
+    /* .action-buttons button {
+         margin-bottom: 10px; 
+        display: none;
+    } */
+    form .btnw{
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        z-index: 2;
+        display:block;
+         background-color: #ffeb3b; 
+        
+       
     }
 }
 
@@ -184,6 +198,7 @@ button {
     .settings-card {
         width: 90%;
         left: 50%;
+        
         transform: translateX(-50%);
         padding: 15px;
         height: auto;
@@ -208,18 +223,28 @@ button {
         gap: 5px;
     }
 
-    .action-buttons {
+    /* .action-buttons {
         flex-direction: column;
         align-items: center;
         position: static;
         margin-top: 10px;
+    } */
+    form .btnw{
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        z-index: 2;
+        display:block;
+         background-color: #ffeb3b; 
+        
+       
     }
 
-    button {
+    /* button {
         width: 100%;
         text-align: center;
         padding: 8px;
-    }
+    } */
 }
 
 /* 📌 Small Phones (Max-width: 480px) */
@@ -250,8 +275,18 @@ button {
         padding: 4px;
     }
 
-    .action-buttons {
+    /* .action-buttons {
         width: 100%;
+    } */
+    form .btnw{
+        position: absolute;
+        right: 10px;
+        bottom: -20px;
+        z-index: 2;
+        display:block;
+         background-color: #ffeb3b; 
+        
+       
     }
 
     button {
